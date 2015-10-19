@@ -182,13 +182,13 @@ h5, h6          { font-weight: bolder }
         display: block;
         width: 30px;
         height: 30px;
-        background: url('./modules/core/img/mangas/sm.png') no-repeat;
+        background: url('../img/mangas/sm.png') no-repeat;
         background-position: 0 0;
     }
 
 
     header ul.social li a:hover{
-        background: url('./modules/core/img/mangas/sm_hover.png') no-repeat;
+        background: url('../img/mangas/sm_hover.png') no-repeat;
     }
 
 
@@ -251,7 +251,7 @@ h5, h6          { font-weight: bolder }
     width: 40px;
     height: 40px;
     cursor: pointer;
-    background: url('/modules/core/img/mangas/men_icons.png') no-repeat;
+    background: url('../img/mangas/men_icons.png') no-repeat;
 }
 
 #menu_icon{
@@ -359,7 +359,7 @@ figure.effect-sadie figcaption::before{position:absolute;top:0;left:0;width:100%
     overflow: hidden;
     display: block;
     position: relative;
-    background: url('./modules/core/img/mangas/hero_image.jpg') no-repeat;
+    background: url('../img/mangas/hero_image.jpg') no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -391,7 +391,7 @@ figure.effect-sadie figcaption::before{position:absolute;top:0;left:0;width:100%
     display: block;
     width: 40px;
     height: 40px;
-    background: url('./modules/core/img/mangas/p_navigation.png') no-repeat;
+    background: url('../img/mangas/p_navigation.png') no-repeat;
     background-position: 0 0;
 }
 

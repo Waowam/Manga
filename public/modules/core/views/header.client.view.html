@@ -1,58 +1,32 @@
 <div class="container" data-ng-controller="HeaderController">
-	<div class="navbar-header">
-		<button class="navbar-toggle" type="button" data-ng-click="toggleCollapsibleMenu()">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		</button>
-		<a href="/#!/" class="navbar-brand">MEAN.JS</a>
-	</div>
-	<nav class="collapse navbar-collapse" collapse="!isCollapsed" role="navigation">
-		<ul class="nav navbar-nav" data-ng-if="menu.shouldRender(authentication.user);">
-			<li data-ng-repeat="item in menu.items | orderBy: 'position'" data-ng-if="item.shouldRender(authentication.user);" ng-switch="item.menuItemType" ui-route="{{item.uiRoute}}" class="{{item.menuItemClass}}" ng-class="{active: ($uiRoute)}" dropdown="item.menuItemType === 'dropdown'">
-				<a ng-switch-when="dropdown" class="dropdown-toggle" dropdown-toggle>
-					<span data-ng-bind="item.title"></span>
-					<b class="caret"></b>
-				</a>
-				<ul ng-switch-when="dropdown" class="dropdown-menu">
-					<li data-ng-repeat="subitem in item.items | orderBy: 'position'" data-ng-if="subitem.shouldRender(authentication.user);" ui-route="{{subitem.uiRoute}}" ng-class="{active: $uiRoute}">
-						<a href="/#!/{{subitem.link}}" data-ng-bind="subitem.title"></a>
-					</li>
-				</ul>
-				<a ng-switch-default href="/#!/{{item.link}}" data-ng-bind="item.title"></a>
-			</li>
+	<div class="logo">
+		<a ui-sref="home"><img src="/modules/core/img/mangas/logo.png" title="Magnetic" alt="Magnetic"/></a>
+	</div><!-- end logo -->
+
+	<div id="menu_icon"></div>
+	<nav>
+		<ul>
+			<li><a ui-sref="home" class="selected">Accueil</a></li>
+			<li><a href="#">Mes animes</a></li>
+			<li><a href="#">Tous les animes</a></li>
+			<li><a href="#">Profil</a></li>
+			<li><a ui-sref="contacts">Contact</a></li>
 		</ul>
-		<ul class="nav navbar-nav navbar-right" data-ng-hide="authentication.user">
-			<li ui-route="/signup" ng-class="{active: $uiRoute}">
-				<a href="/#!/signup">Sign Up</a>
-			</li>
-			<li class="divider-vertical"></li>
-			<li ui-route="/signin" ng-class="{active: $uiRoute}">
-				<a href="/#!/signin">Sign In</a>
-			</li>
-		</ul>
-		<ul class="nav navbar-nav navbar-right" data-ng-show="authentication.user">
-			<li class="dropdown" dropdown>
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown" dropdown-toggle>
-					<span data-ng-bind="authentication.user.displayName"></span> <b class="caret"></b>
-				</a>
-				<ul class="dropdown-menu">
-					<li>
-						<a href="/#!/settings/profile">Edit Profile</a>
-					</li>
-					<li>
-						<a href="/#!/settings/accounts">Manage Social Accounts</a>
-					</li>
-					<li data-ng-show="authentication.user.provider === 'local'">
-						<a href="/#!/settings/password">Change Password</a>
-					</li>
-					<li class="divider"></li>
-					<li>
-						<a href="/auth/signout">Signout</a>
-					</li>
-				</ul>
-			</li>
-		</ul>
-	</nav>
+	</nav><!-- end navigation menu -->
+
+	<div class="footer clearfix">
+		<ul class="social clearfix">
+			<li><a href="#" class="fb" data-title="Facebook"></a></li>
+			<li><a href="#" class="google" data-title="Google +"></a></li>
+			<li><a href="#" class="behance" data-title="Behance"></a></li>
+			<!--<li><a href="#" class="twitter" data-title="Twitter"></a></li>
+			<li><a href="#" class="dribble" data-title="Dribble"></a></li>-->
+			<li><a href="#" class="rss" data-title="RSS"></a></li>
+		</ul><!-- end social -->
+
+		<div class="rights">
+			<p>Copyright © 2014 magnetic.</p>
+			<p>Template by <a href="">Pixelhint.com</a></p>
+		</div><!-- end rights -->
+	</div ><!-- end footer -->
 </div>
