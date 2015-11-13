@@ -66,6 +66,7 @@
 /*  General CSS*/
 body{
     background: #fff;
+
 }
 
 .wrapper{
@@ -73,9 +74,9 @@ body{
     margin: 0 auto;
 }
 
-header ul.social li a,
+header .container ul.social li a,
 .main .work a .caption,
-header nav ul li a{
+header .container nav ul li a{
     transition:all .1s linear;
     -webkit-transition:all .1s linear;
     -moz-transition:all .1s linear;
@@ -117,14 +118,14 @@ h5, h6          { font-weight: bolder }
 
 /*  Header  */
 @media (min-width:1000px){
-    header{
+    header .container{
         display: block;
         position: fixed;
         top: 0;
         left: 0;
-        width: 200px;
+        width: 230px;
         min-height: 100%;
-        padding: 0 0 0 50px;
+        padding: 0 0 0 20px;
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8e0101+0,8e0101+22,8e0101+22,ad1111+35,ff7b00+87 */
 background: #8e0101; /* Old browsers */
 background: -moz-linear-gradient(top,  #8e0101 0%, #8e0101 22%, #8e0101 22%, #ad1111 35%, #ff7b00 87%); /* FF3.6+ */
@@ -140,23 +141,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e0101', end
         z-index: 9999;
     }
 
-    header .logo{
+    header .container .logo{
         margin-top: 50px;
     }
 
-    header nav ul{
+    header .container nav ul{
         display: block;
         overflow: hidden;
         margin-top: 100px;
         list-style: none;
     }
 
-    header nav ul li{
+    header .container nav ul li{
         display: block;
         margin-bottom: 30px;
     }
 
-    header nav ul li a{
+    header .container nav ul li a{
         color: #ffffff;
         font-family: "raleway-regular", arial;
         font-size: 14px;
@@ -164,22 +165,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e0101', end
         letter-spacing: 1px;
     }
 
-    header nav ul li a:hover,
-    header nav ul li a.selected{
+    header .container nav ul li a:hover,
+    header .container nav ul li a.selected{
         color: #ffffff;
     }
 
-    header .footer{
+    header .container .footer{
         position: absolute;
         bottom: 50px;
     }
 
-    header ul.social{
+    header .container ul.social{
         list-style: none;
         margin-bottom: 5px;
     }
 
-    header ul.social li{
+    header .container ul.social li{
         display: block;
         float: left;
         position: relative;
@@ -187,7 +188,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e0101', end
     }
 
 
-    header ul.social li a{
+    header .container ul.social li a{
         display: block;
         width: 30px;
         height: 30px;
@@ -196,44 +197,44 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e0101', end
     }
 
 
-    header ul.social li a:hover{
+    header .container ul.social li a:hover{
         background: url('./modules/core/img/mangas/sm_hover.png') no-repeat;
     }
 
 
 
-    header ul.social li a.fb,
-    header ul.social li a.fb:hover{
+    header .container ul.social li a.fb,
+    header .container ul.social li a.fb:hover{
         background-position: 0 0;
     }
 
 
-    header ul.social li a.google,
-    header ul.social li a.google:hover{
+    header .container ul.social li a.google,
+    header .container ul.social li a.google:hover{
         background-position: -31px 0;
     }
 
-    header ul.social li a.behance,
-    header ul.social li a.behance:hover{
+    header .container ul.social li a.behance,
+    header .container ul.social li a.behance:hover{
         background-position: -62px 0;
     }
 
-    header ul.social li a.twitter,
-    header ul.social li a.twitter:hover{
+    header .container ul.social li a.twitter,
+    header .container ul.social li a.twitter:hover{
         background-position: -93px 0;
     }
 
-    header ul.social li a.dribble,
-    header ul.social li a.dribble:hover{
+    header .container ul.social li a.dribble,
+    header .container ul.social li a.dribble:hover{
         background-position: -124px 0;
     }
 
-    header ul.social li a.rss,
-    header ul.social li a.rss:hover{
+    header .container ul.social li a.rss,
+    header .container ul.social li a.rss:hover{
         background-position: -155px 0;
     }
 
-    header .rights p{
+    header .container .rights p{
         color: #ffffff;
         font-family: "raleway-regular", arial;
         font-size: 11px;
@@ -241,7 +242,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e0101', end
         line-height: 18px;
     }
 
-    header .rights a{
+    header .container .rights a{
         font-family: "raleway-bold", arial;
         font-weight: bold;
         text-decoration: none;
@@ -332,7 +333,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e0101', end
     vertical-align: middle;}
 
 
-.news .label{
+.news .work1 .label{
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-style: none;
   border-bottom-width: 0px;
@@ -360,8 +361,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e0101', end
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-  position:  relative;
-  width: 188.063px;
+  position: relative;
+  width: 190px;
   z-index: 100;
 }
 
@@ -693,32 +694,32 @@ figure.effect-sadie figcaption::before{position:absolute;top:0;left:0;width:100%
 /*  Responsive code  */
 @media (max-width:1100px){
 
-    header{
+    header .container{
         display: block;
         width: 100%;
         min-height: 100px;
         padding: 0;
         position: relative;
     }
-    header .logo{
+    header .container .logo{
         margin: 40px 0 0 30px;
         display: inline-block;
     }
-    header .footer{
+    header .container .footer{
         display: none;
     }
-    header #menu_icon,
-    header .close_menu{
+    header .container #menu_icon,
+    header .container .close_menu{
         float: right;
         margin: 30px 30px 0 0;
     }
-    header nav ul{
+    header .container nav ul{
         list-style: none;
         display: none;
         margin-top: 35px;
         position: relative;
     }
-    header nav ul li a{
+    header .container nav ul li a{
         display: block;
         width: 100%;
         padding: 30px 0;
@@ -730,7 +731,7 @@ figure.effect-sadie figcaption::before{position:absolute;top:0;left:0;width:100%
         border-top: 1px solid #f7f5f5;
         background: #fff;
     }
-    header nav ul li a:active{
+    header .container nav ul li a:active{
         background: #f7f5f5;
     }
     #menu_icon,
