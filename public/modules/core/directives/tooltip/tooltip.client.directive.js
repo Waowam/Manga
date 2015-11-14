@@ -9,7 +9,7 @@ angular.module('core.tooltip-directive', [])
       //TODO Fix this whenever we want if we want tooltips
     }
   };
-}]);
+});
 
 // var attr_title = $(this).attr("data-title");
 //
